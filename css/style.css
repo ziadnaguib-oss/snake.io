@@ -32,3 +32,14 @@ body{
 	background-color: transparent;
 	z-index: 3;
 }
+
+
+/* --- Full-window layout + dark bg --- */
+html, body { margin: 0; padding: 0; height: 100%; background: #0d0f14; }
+#game { position: fixed; inset: 0; width: 100vw; height: 100vh; }
+.cnv { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/* --- Override earlier box layout to truly full-screen --- */
+body { text-align: left; padding: 0; overflow: hidden; }
+#game { position: fixed !important; inset: 0 !important; width: 100vw !important; height: 100vh !important; margin: 0 !important; }
